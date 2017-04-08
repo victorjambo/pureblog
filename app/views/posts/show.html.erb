@@ -1,14 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="content pure-u-1 pure-u-md-3-4">
+    <div>
+        <!-- A wrapper for all the blog posts -->
+        <div class="posts">
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+            <!-- A single blog post -->
+            <section class="post">
+                <header class="post-header">
+                    <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAlRAAAAJGQyODNlZDdjLWVmNTYtNDY2ZS04ODYzLWM4MDZlZTQ4ZDQ1Nw.jpg">
 
-<p>
-  <strong>Body:</strong>
-  <%= @post.body %>
-</p>
+                    <h2 class="post-title"><%= @post.title %></h2>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+                    <p class="post-meta">
+                        By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+                    </p>
+                </header>
+
+                <div class="post-description">
+                    <p>
+                        <%= @post.body %>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
