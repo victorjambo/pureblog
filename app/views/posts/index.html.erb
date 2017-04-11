@@ -13,7 +13,7 @@
                         <h2 class="post-title"><%= link_to post.title, post %></h2>
 
                         <p class="post-meta">
-                            Posted on <a href="#" class="post-author"><%= post.created_at %></a> <em>Tags</em> <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+                            Posted <a href="#" class="post-author"><%= time_ago_in_words(post.created_at) %></a> ago <em>Tags</em> <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
                         </p>
                     </header>
 
