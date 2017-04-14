@@ -9,11 +9,12 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
+ *= require froala_editor.min.css
+ *= require froala_style.min.css
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
-
 
 * {
     -webkit-box-sizing: border-box;
@@ -248,7 +249,7 @@ This is the parent `<div>` that contains the menu and the content area.
     }
      .show-header h2 {
         font-weight: 300;
-        color: #ccc;show-
+        color: #ccc;
         padding: 0;
         margin-top: 0;
     }

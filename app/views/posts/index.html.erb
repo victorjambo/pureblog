@@ -8,7 +8,10 @@
                 <!-- A single blog post -->
                 <section class="post">
                     <header class="post-header">
-                        <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAlRAAAAJGQyODNlZDdjLWVmNTYtNDY2ZS04ODYzLWM4MDZlZTQ4ZDQ1Nw.jpg">
+                        <%= link_to like_post_path(post), method: :put do %>
+                            <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAlRAAAAJGQyODNlZDdjLWVmNTYtNDY2ZS04ODYzLWM4MDZlZTQ4ZDQ1Nw.jpg">
+                        <% end %>
+
 
                         <h2 class="post-title"><%= link_to post.title, post %></h2>
 
@@ -19,7 +22,7 @@
 
                     <div class="post-description">
                         <p>
-                            <%= post.body %>
+                            <%= raw post.body %>
                         </p>
                     </div>
                 </section>

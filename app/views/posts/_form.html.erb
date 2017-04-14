@@ -18,10 +18,14 @@
 
   <div class="field">
     <%= f.label :body %>
-    <%= f.text_area :body %>
+    <%= f.text_area :body, id: "wysiwyg" %>
   </div>
 
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+<script>
+  $('#wysiwyg').froalaEditor()
+</script>
